@@ -58,7 +58,7 @@ body {
     height: 100px !important;
 }
 
-button {
+button, #copy-link-btn, #share-link-btn {
     padding: 10px 20px;
     border: 1px solid #b2b2b2;
     border-radius: 8px;
@@ -70,7 +70,7 @@ button {
     transition: 0.3s background-color;
 }
 
-button:hover {
+button:hover, #copy-link-btn:hover, #share-link-btn:hover {
     background-color: #008000;
 }
 
