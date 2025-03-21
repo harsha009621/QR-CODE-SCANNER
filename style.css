@@ -1,50 +1,48 @@
-/* style.css file*/
-
-
-*{
-    margin: 0%;
-    padding:0%;
-    box-sizing: 0;
-}
-body {
-    display: flex;
-    justify-content: right;
+* {
     margin: 0;
     padding: 0;
-    height: 100vh;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
     background: rgba(81, 101, 255, 0.66);
+    padding: 20px;
 }
+
 .container {
     width: 100%;
     max-width: 500px;
-    margin: 5px;
     margin-top: 5%;
 }
 
 .container h1 {
     color: #ffffff;
     padding-bottom: 40px;
-    margin-top: 0%;
     font-family: monospace;
 }
 
 .section {
-
     background-color: #ffffff;
-    padding: 80px 50px;
+    padding: 40px 20px;
     border: 1.5px solid #b2b2b2;
-    border-radius: 0.25em;
+    border-radius: 8px;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
 }
+
 .contact-info {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 10px;
+    text-align: center;
     font-size: 14px;
-    color: #000000;
-    }  
+    color: #000;
+}
+
 #my-qr-reader {
     padding: 20px !important;
     border: 1.5px solid #b2b2b2 !important;
@@ -63,13 +61,11 @@ body {
 button {
     padding: 10px 20px;
     border: 1px solid #b2b2b2;
-    outline: none;
-    border-radius: 0.25em;
+    border-radius: 8px;
     color: white;
     font-size: 15px;
     cursor: pointer;
     margin-top: 15px;
-    margin-bottom: 10px;
     background-color: #0f5b0fad;
     transition: 0.3s background-color;
 }
@@ -78,40 +74,14 @@ button:hover {
     background-color: #008000;
 }
 
-#html5-qrcode-anchor-scan-type-change {
-    text-decoration: none !important;
-    color: #1d9bf0;
-}
-
 video {
     width: 100% !important;
     border: 1px solid #b2b2b2 !important;
-    border-radius: 0.25em;
+    border-radius: 8px;
 }
-#result{
-    color:red;
-    
-}
-#copy-link-btn, #share-link-btn {
-    padding: 10px 20px;
-    border: 1px solid #b2b2b2;
-    outline: none;
-    border-radius: 0.25em;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
+
+#result {
+    color: red;
+    font-weight: bold;
     margin-top: 15px;
-    margin-bottom: 10px;
-    background-color: #0f5b0fad;
-    transition: 0.3s background-color;
 }
-
-#copy-link-btn:hover, #share-link-btn:hover {
-    background-color: #008000;
-}
-.bar {
-    background-color: rgb(255, 252, 252);
-}
-
-
-
