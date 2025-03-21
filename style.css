@@ -1,48 +1,50 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style.css file*/
 
+
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: 0;
+}
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
     height: 100vh;
+    box-sizing: border-box;
     text-align: center;
     background: rgba(81, 101, 255, 0.66);
-    padding: 20px;
 }
-
 .container {
     width: 100%;
     max-width: 500px;
+    margin: 5px;
     margin-top: 5%;
 }
 
 .container h1 {
     color: #ffffff;
     padding-bottom: 40px;
+    margin-top: 0%;
     font-family: monospace;
 }
 
 .section {
+
     background-color: #ffffff;
-    padding: 40px 20px;
+    padding: 80px 50px;
     border: 1.5px solid #b2b2b2;
-    border-radius: 8px;
+    border-radius: 0.25em;
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
 }
-
 .contact-info {
     position: absolute;
-    bottom: 10px;
-    text-align: center;
+    top: 10px;
+    right: 10px;
     font-size: 14px;
-    color: #000;
-}
-
+    color: #000000;
+    }  
 #my-qr-reader {
     padding: 20px !important;
     border: 1.5px solid #b2b2b2 !important;
@@ -58,30 +60,55 @@ body {
     height: 100px !important;
 }
 
-button, #copy-link-btn, #share-link-btn {
+button {
     padding: 10px 20px;
     border: 1px solid #b2b2b2;
-    border-radius: 8px;
+    outline: none;
+    border-radius: 0.25em;
     color: white;
     font-size: 15px;
     cursor: pointer;
     margin-top: 15px;
+    margin-bottom: 10px;
     background-color: #0f5b0fad;
     transition: 0.3s background-color;
 }
 
-button:hover, #copy-link-btn:hover, #share-link-btn:hover {
+button:hover {
     background-color: #008000;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+    text-decoration: none !important;
+    color: #1d9bf0;
 }
 
 video {
     width: 100% !important;
     border: 1px solid #b2b2b2 !important;
-    border-radius: 8px;
+    border-radius: 0.25em;
+}
+#result{
+    color:red;
+    
+}
+#copy-link-btn, #share-link-btn {
+    padding: 10px 20px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    border-radius: 0.25em;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #0f5b0fad;
+    transition: 0.3s background-color;
 }
 
-#result {
-    color: red;
-    font-weight: bold;
-    margin-top: 15px;
+#copy-link-btn:hover, #share-link-btn:hover {
+    background-color: #008000;
+}
+.bar {
+    background-color: rgb(255, 252, 252);
 }
